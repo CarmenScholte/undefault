@@ -1,0 +1,32 @@
+{
+  "name": "undefault",
+  "version": "1.0.0",
+  "description": "CSS framework for simple, customizable form elements",
+  "main": "undefault.scss",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarmenScholte/Undefault.git"
+  },
+  "keywords": [
+    "css",
+    "js",
+    "front-end",
+    "angular"
+  ],
+  "author": "Carmen Scholte Lubberink",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarmenScholte/Undefault/issues"
+  },
+  "homepage": "https://github.com/CarmenScholte/Undefault#readme",
+  "files": [
+    "undefault.scss",
+    "scss",
+    "js",
+    "README"
+  ]
+
+}
