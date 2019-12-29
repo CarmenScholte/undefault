@@ -57,3 +57,7 @@ $default-select-focus-shadow: 0 0 3px 0 $focus-blue;
 // input
 $default-input-focus-shadow: $default-form-element-focus-shadow;
 
+
+// checkbox
+$default-checkbox-check-url: url("undefault/svg/check.svg");
+$default-checkbox-check-url-disabled: url("undefault/svg/check-disabled.svg");

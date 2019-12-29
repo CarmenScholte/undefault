@@ -94,8 +94,8 @@ $input-border-color-disabled: $form-element-border-color-disabled !default;
 
 // checkbox
 // overwrite to change for checkbox elements
-$checkbox-check-url: url("undefault/svg/check.svg");
-$checkbox-check-url-disabled: url("undefault/svg/check-disabled.svg");
+$checkbox-check-url: $default-checkbox-check-url;
+$checkbox-check-url-disabled: $default-checkbox-check-url-disabled;
 
 $checkbox-border-color: $form-element-border-color !default;
 $checkbox-border-radius: $form-element-border-radius !default;
