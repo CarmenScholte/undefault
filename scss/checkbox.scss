@@ -10,10 +10,10 @@ input[type=checkbox],
   border-radius: $checkbox-border-radius;
   border-style: $checkbox-border-style;
   border-width: $checkbox-border-width;
-  height: $checkbox-height;
+  height: $checkbox-size;
   padding: 0;
   transition: 200ms;
-  width: $checkbox-height;
+  width: $checkbox-size;
   -webkit-appearance: none;
 
   &:checked {
