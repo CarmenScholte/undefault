@@ -47,8 +47,8 @@ $default-form-element-text-color-disabled: $b;
 $default-form-element-background-color-disabled: $e;
 
 // select
-$default-select-arrow-url: url('assets/dropdown-arrow.svg');
-$default-select-arrow-url-disabled: url('assets/dropdown-arrow-disabled.svg');
+$default-select-arrow-url: url('../svg/dropdown-arrow.svg');
+$default-select-arrow-url-disabled: url('../svg/dropdown-arrow-disabled.svg');
 $default-select-focus-shadow: 0 0 3px 0 $focus-blue;
 
 // input
