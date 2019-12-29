@@ -112,3 +112,25 @@ $input-text-color-disabled
 $input-background-color-disabled
 $input-border-color-disabled
 ```
+
+### Checkbox
+```
+$checkbox-check-url;
+$checkbox-check-url-disabled;
+
+$checkbox-border-color
+$checkbox-border-radius
+$checkbox-border-style
+$checkbox-border-width
+$checkbox-background-color
+$checkbox-size
+
+$checkbox-focus-color
+$checkbox-focus-shadow
+
+$checkbox-background-color-hover
+$checkbox-border-color-hover
+
+$checkbox-background-color-disabled
+$checkbox-border-color-disabled
+```
