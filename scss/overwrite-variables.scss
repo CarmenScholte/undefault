@@ -79,7 +79,7 @@ $input-text-color: $form-element-text-color !default;
 
 // input focus 
 $input-focus-color: $form-element-focus-color !default;
-$input-focus-shadow: $default-input-focus-shadow !default;
+$input-focus-shadow: $form-element-focus-shadow !default;
 
 // input hover
 $input-text-color-hover: $form-element-text-color-hover !default;
@@ -90,3 +90,28 @@ $input-border-color-hover: $form-element-border-color-hover !default;
 $input-text-color-disabled: $form-element-text-color-disabled !default;
 $input-background-color-disabled: $form-element-background-color-disabled !default;
 $input-border-color-disabled: $form-element-border-color-disabled !default;
+
+
+// checkbox
+// overwrite to change for checkbox elements
+$checkbox-check-url: url("undefault/svg/check.svg");
+$checkbox-check-url-disabled: url("undefault/svg/check-disabled.svg");
+
+$checkbox-border-color: $form-element-border-color !default;
+$checkbox-border-radius: $form-element-border-radius !default;
+$checkbox-border-style: $form-element-border-style !default;
+$checkbox-border-width: $form-element-border-width !default;
+$checkbox-background-color: $form-element-background-color !default;
+$checkbox-height: calc(#{$form-element-height} / 2) !default;
+
+// checkbox focus 
+$checkbox-focus-color: $form-element-focus-color !default;
+$checkbox-focus-shadow: $form-element-focus-shadow !default;
+
+// checkbox hover
+$checkbox-background-color-hover: $form-element-background-color-hover !default;
+$checkbox-border-color-hover: $form-element-border-color-hover !default;
+
+// checkbox disabled
+$checkbox-background-color-disabled: $form-element-background-color-disabled !default;
+$checkbox-border-color-disabled: $form-element-border-color-disabled !default;

@@ -35,10 +35,13 @@ input,
 
   &:disabled {
     background-color: $input-background-color-disabled;
+    border-color: $input-border-color-disabled;
     color: $input-text-color-disabled;
 
     &:hover {
+      background-color: $input-background-color-disabled;
       border-color: $input-border-color-disabled;
+      color: $input-text-color-disabled;
     }
   }
 }

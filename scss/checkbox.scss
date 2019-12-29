@@ -1,18 +1,63 @@
 @import "./overwrite-variables.scss";
 
-input[type=checkbox] {
-  color: blue;
-  height: calc(#{$input-height} / 2);
-  width: calc(#{$input-height} / 2);
-  appearance: none;
+input[type=checkbox],
+.input[type=checkbox] {
+  background: $checkbox-background-color;
   background-position: center;
-  background-size: calc((#{$input-height} / 2) - 4px);
+  background-size: 12px;
+  background-repeat: no-repeat;
+  border-color: $checkbox-border-color;
+  border-radius: $checkbox-border-radius;
+  border-style: $checkbox-border-style;
+  border-width: $checkbox-border-width;
+  height: $checkbox-height;
+  padding: 0;
+  transition: 200ms;
+  width: $checkbox-height;
+  -webkit-appearance: none;
 
   &:checked {
-    background: url("undefault/svg/dropdown-arrow.svg"), $input-focus-color;
+    background: url("undefault/svg/check.svg"), $checkbox-focus-color;
     background-position: center;
-    background-size: calc((#{$input-height} / 2) - 4px);
+    background-size: 12px;
     background-repeat: no-repeat;
-    border-color: $input-focus-color;
+    border-color: $checkbox-focus-color;
+
+    &:hover {
+      background: url("undefault/svg/check.svg"), $checkbox-focus-color;
+      background-position: center;
+      background-size: 12px;
+      background-repeat: no-repeat;
+      border-color: $checkbox-focus-color;
+    }
+
+    &:disabled {
+      background: url("undefault/svg/check-disabled.svg"), $checkbox-background-color-disabled;
+      background-position: center;
+      background-size: 12px;
+      background-repeat: no-repeat;
+      border-color: $checkbox-border-color-disabled;
+    }
+  }
+
+  &:hover {
+    background-color: $checkbox-background-color-hover;
+    border-color: $checkbox-border-color-hover;
+  }
+
+  &:focus {
+    border-color: $checkbox-focus-color;
+    box-shadow: $checkbox-focus-shadow;
+    outline: none;
+  }
+
+  &:disabled {
+    border-color: $checkbox-border-color-disabled;
+    background-color: $checkbox-background-color-disabled;
+
+    &:hover {
+      border-color: $checkbox-border-color-disabled;
+      background-color: $checkbox-background-color-disabled;  
+    }
   }
 }
