@@ -29,22 +29,24 @@ select,
   }
 
   &:hover {
+    background-color: $select-background-color-hover;
     border-color: $select-border-color-hover;
+    color: $select-text-color-hover;
   }
 
   &:focus {
-    outline: none;
     border-color: $select-focus-color;
     box-shadow: $select-focus-shadow;
+    outline: none;
   }
 
   &:disabled {
     background-color: $select-background-color-disabled;
-    color: $select-text-color-disabled;
     background-image: $select-arrow-url-disabled;
+    color: $select-text-color-disabled;
 
     &:hover {
-      border-color: $select-border-color;
+      border-color: $select-border-color-disabled;
     }
   }
 }
@@ -96,7 +98,7 @@ select,
       background-image: $select-arrow-url-disabled;
 
       &:hover {
-        border-color: $select-border-color;
+        border-color: $select-border-color-disabled;
       }
     }
   }
@@ -136,6 +138,7 @@ select,
 
   &--disabled {
     color: $select-placeholder-color;
+    
     &:hover {
       background-color: $select-background-color;
     }

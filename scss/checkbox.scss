@@ -1,0 +1,18 @@
+@import "./overwrite-variables.scss";
+
+input[type=checkbox] {
+  color: blue;
+  height: calc(#{$input-height} / 2);
+  width: calc(#{$input-height} / 2);
+  appearance: none;
+  background-position: center;
+  background-size: calc((#{$input-height} / 2) - 4px);
+
+  &:checked {
+    background: url("undefault/svg/dropdown-arrow.svg"), $input-focus-color;
+    background-position: center;
+    background-size: calc((#{$input-height} / 2) - 4px);
+    background-repeat: no-repeat;
+    border-color: $input-focus-color;
+  }
+}

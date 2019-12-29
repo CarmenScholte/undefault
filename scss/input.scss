@@ -11,6 +11,7 @@ input,
   color: $input-text-color;
   font-size: $form-element-font-size;
   font-family: $form-element-font-family;
+  height: $input-height;
   margin: 0;
   padding: $input-padding;
   transition-duration: 200ms;
@@ -21,15 +22,15 @@ input,
   }
 
   &:hover {
+    background-color: $input-background-color-hover;
     border-color: $input-border-color-hover;
     color: $input-text-color-hover;
   }
 
   &:focus {
-    outline: none;
     border-color: $input-focus-color;
-    position: relative;
     box-shadow: $input-focus-shadow;
+    outline: none;
   }
 
   &:disabled {
@@ -37,7 +38,7 @@ input,
     color: $input-text-color-disabled;
 
     &:hover {
-      border-color: $input-border-color;
+      border-color: $input-border-color-disabled;
     }
   }
 }
