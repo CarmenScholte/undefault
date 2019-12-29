@@ -1,6 +1,6 @@
 {
   "name": "undefault",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "CSS framework for simple, customizable form elements",
   "main": "undefault.scss",
   "scripts": {
@@ -27,7 +27,7 @@
     "scss",
     "js",
     "svg",
-    "README"
+    "README.md"
   ]
 
 }

@@ -1,55 +1,50 @@
-@import "./variables.scss";
+@import "./overwrite-variables.scss";
 
 select,
 .select {
-  background: $select-arrow-url, $form-element-background-color;
+  background: $select-arrow-url, $select-background-color;
   background-repeat: no-repeat;
   background-position: center right 10px;
   background-size: 12px;
-  border: $form-element-border-width $form-element-border-style $form-element-border-color;
-  border-radius: $form-element-border-radius;
+  border: $select-border-width $select-border-style $select-border-color;
+  border-radius: $select-border-radius;
   box-sizing: border-box;
-  color: $form-element-text-color;
+  color: $select-text-color;
   display: inline-block;
   font-size: $form-element-font-size;
   font-family: $form-element-font-family;
-  height: $form-element-height;
+  height: $select-height;
   margin: 0;
-  padding: $form-element-padding;
+  padding: $select-padding;
   padding-right: 32px;
   position: relative;
   transition-duration: 200ms;
-  vertical-align: top;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   -webkit-appearance: none;
 
 
   // placeholder disabled color
   // only works if select is required and option is disabled and has a value
   &:required:invalid {
-    color: $form-element-placeholder-color;
+    color: $select-placeholder-color;
   }
 
   &:hover {
-    border-color: $form-element-border-color-hover;
+    border-color: $select-border-color-hover;
   }
 
   &:focus {
     outline: none;
-    border-color: $form-element-focus-color;
-    overflow: visible;
-    box-shadow: $form-element-focus-shadow;
+    border-color: $select-focus-color;
+    box-shadow: $select-focus-shadow;
   }
 
   &:disabled {
-    background-color: $form-element-background-color-disabled;
-    color: $form-element-text-color-disabled;
+    background-color: $select-background-color-disabled;
+    color: $select-text-color-disabled;
     background-image: $select-arrow-url-disabled;
 
     &:hover {
-      border-color: $form-element-border-color;
+      border-color: $select-border-color;
     }
   }
 }
@@ -57,29 +52,29 @@ select,
 // after script
 .select-wrapper {
   display: inline-block;
-  height: $form-element-height;
+  height: $select-height;
   position: relative;
 
   & .select {
     width: 100%;
 
     &--option-disabled {
-      color: $form-element-placeholder-color;
+      color: $select-placeholder-color;
     }
 
     &--opened {
-      border-bottom: $form-element-border-width $form-element-border-style $form-element-background-color;
-      border-radius: $form-element-border-radius $form-element-border-radius 0 0;
+      border-bottom: $select-border-width $select-border-style $select-background-color;
+      border-radius: $select-border-radius $select-border-radius 0 0;
       position: relative;
 
       &:hover {
-        border-color: $form-element-border-color;
-        border-bottom: $form-element-border-width $form-element-border-style $form-element-background-color;
+        border-color: $select-border-color;
+        border-bottom: $select-border-width $select-border-style $select-background-color;
       }
 
       &:focus {
-        border-color: $form-element-focus-color;
-        border-bottom: $form-element-border-width $form-element-border-style $form-element-background-color;
+        border-color: $select-focus-color;
+        border-bottom: $select-border-width $select-border-style $select-background-color;
         box-shadow: none;
 
         &::after {
@@ -96,12 +91,12 @@ select,
     }
 
     &--disabled {
-      background-color: $form-element-background-color-disabled;
-      color: $form-element-text-color-disabled;
+      background-color: $select-background-color-disabled;
+      color: $select-text-color-disabled;
       background-image: $select-arrow-url-disabled;
 
       &:hover {
-        border-color: $form-element-border-color;
+        border-color: $select-border-color;
       }
     }
   }
@@ -109,10 +104,10 @@ select,
 
 .options {
   z-index: 1;
-  border: $form-element-border-width $form-element-border-style $form-element-border-color;
+  border: $select-border-width $select-border-style $select-border-color;
   border-top: 0;
-  border-radius: 0 0 $form-element-border-radius $form-element-border-radius;
-  background-color: $form-element-background-color;
+  border-radius: 0 0 $select-border-radius $select-border-radius;
+  background-color: $select-background-color;
 
   &--closed {
     visibility: hidden;
@@ -122,9 +117,9 @@ select,
 .option {
   font-size: $form-element-font-size;
   font-family: $form-element-font-family;
-  color: $form-element-text-color;
-  height: $form-element-height;
-  padding: $form-element-padding;
+  color: $select-text-color;
+  height: $select-height;
+  padding: $select-padding;
   padding-right: 32px;
   overflow: hidden;
   box-sizing: border-box;
@@ -132,7 +127,7 @@ select,
   text-overflow: ellipsis;
 
   &:last-child {
-    border-radius: 0 0 $form-element-border-radius $form-element-border-radius;
+    border-radius: 0 0 $select-border-radius $select-border-radius;
   }
 
   &:hover {
@@ -140,9 +135,9 @@ select,
   }
 
   &--disabled {
-    color: $form-element-placeholder-color;
+    color: $select-placeholder-color;
     &:hover {
-      background-color: $form-element-background-color;
+      background-color: $select-background-color;
     }
   }
 }

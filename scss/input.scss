@@ -1,43 +1,43 @@
-@import "./variables.scss";
+@import "./overwrite-variables.scss";
 
 input,
 .input {
-  background-color: $form-element-background-color;
-  border-width: $form-element-border-width;
-  border-color: $form-element-border-color;
-  border-style: $form-element-border-style;
-  border-radius: $form-element-border-radius;
+  background-color: $input-background-color;
+  border-width: $input-border-width;
+  border-color: $input-border-color;
+  border-style: $input-border-style;
+  border-radius: $input-border-radius;
   box-sizing: border-box;
-  color: $form-element-text-color;
+  color: $input-text-color;
   font-size: $form-element-font-size;
   font-family: $form-element-font-family;
   margin: 0;
-  padding: $form-element-padding;
+  padding: $input-padding;
   transition-duration: 200ms;
 
   &::placeholder {
-    color: $form-element-placeholder-color;
+    color: $input-placeholder-color;
     opacity: 1;
   }
 
   &:hover {
-    border-color: $form-element-border-color-hover;
-    color: $form-element-text-color-hover;
+    border-color: $input-border-color-hover;
+    color: $input-text-color-hover;
   }
 
   &:focus {
     outline: none;
-    border-color: $form-element-focus-color;
+    border-color: $input-focus-color;
     position: relative;
     box-shadow: $input-focus-shadow;
   }
 
   &:disabled {
-    background-color: $form-element-background-color-disabled;
-    color: $form-element-text-color-disabled;
+    background-color: $input-background-color-disabled;
+    color: $input-text-color-disabled;
 
     &:hover {
-      border-color: $form-element-border-color;
+      border-color: $input-border-color;
     }
   }
 }

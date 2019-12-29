@@ -1,0 +1,92 @@
+// general
+// overwrite top level defaults to change for all elements 
+$undefault-font-family: $default-font-family !default;
+$undefault-font-size: $default-font-size !default;
+
+
+// form elements
+// overwrite to change for all form elements
+$form-element-border-color: $default-form-element-border-color !default;
+$form-element-border-radius: $default-form-element-border-radius !default;
+$form-element-border-style: $default-form-element-border-style !default;
+$form-element-border-width: $default-form-element-border-width !default;
+
+$form-element-font-size: $undefault-font-size !default;
+$form-element-font-family: $undefault-font-family !default;
+
+$form-element-background-color: $default-form-element-background-color !default;
+$form-element-height: $default-form-element-height !default;
+$form-element-padding: $default-form-element-padding !default;
+$form-element-placeholder-color: $default-form-element-placeholder-color !default;
+$form-element-text-color: $default-form-element-text-color !default;
+
+// form element focus 
+$form-element-focus-color: $default-form-element-focus-color !default;
+$form-element-focus-shadow: $default-form-element-focus-shadow !default;
+
+// form element hover
+$form-element-text-color-hover: $default-form-element-text-color-hover !default;
+$form-element-background-color-hover: $default-form-element-color-hover !default;
+$form-element-border-color-hover: $default-form-element-border-color-hover !default;
+
+// form element disabled
+$form-element-text-color-disabled: $default-form-element-text-color-disabled !default;
+$form-element-background-color-disabled: $default-form-element-background-color-disabled !default;
+$form-element-border-color-disabled: $default-form-element-border-color-disabled !default;
+
+
+// select 
+// overwrite to change for select elements
+$select-arrow-url: $default-select-arrow-url !default;
+$select-arrow-url-disabled: $default-select-arrow-url-disabled !default;
+
+$select-border-color: $form-element-border-color !default;
+$select-border-radius: $form-element-border-radius !default;
+$select-border-style: $form-element-border-style !default;
+$select-border-width: $form-element-border-width !default;
+$select-background-color: $form-element-background-color !default;
+$select-height: $form-element-height !default;
+$select-padding: $form-element-padding !default;
+$select-placeholder-color: $form-element-placeholder-color !default;
+$select-text-color: $form-element-text-color !default;
+
+// select focus
+$select-focus-color: $form-element-focus-color !default;
+$select-focus-shadow: $form-element-focus-shadow !default;
+
+// select hover
+$select-text-color-hover: $form-element-text-color-hover !default;
+$select-background-color-hover: $form-element-color-hover !default;
+$select-border-color-hover: $form-element-border-color-hover !default;
+
+// select disabled
+$select-text-color-disabled: $form-element-text-color-disabled !default;
+$select-background-color-disabled: $form-element-background-color-disabled !default;
+$select-border-color-disabled: $form-element-border-color-disabled !default;
+
+
+// input
+// overwrite to change for input elements
+$input-border-color: $form-element-border-color !default;
+$input-border-radius: $form-element-border-radius !default;
+$input-border-style: $form-element-border-style !default;
+$input-border-width: $form-element-border-width !default;
+$input-background-color: $form-element-background-color !default;
+$input-height: $form-element-height !default;
+$input-padding: $form-element-padding !default;
+$input-placeholder-color: $form-element-placeholder-color !default;
+$input-text-color: $form-element-text-color !default;
+
+// input focus 
+$input-focus-color: $form-element-focus-color !default;
+$input-focus-shadow: $default-input-focus-shadow !default;
+
+// input hover
+$input-text-color-hover: $form-element-text-color-hover !default;
+$input-background-color-hover: $form-element-color-hover !default;
+$input-border-color-hover: $form-element-border-color-hover !default;
+
+// input disabled
+$input-text-color-disabled: $form-element-text-color-disabled !default;
+$input-background-color-disabled: $form-element-background-color-disabled !default;
+$input-border-color-disabled: $form-element-border-color-disabled !default;

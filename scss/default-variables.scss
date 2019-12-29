@@ -1,0 +1,59 @@
+// defaults
+// gray scale 
+$zero: #000;
+$one: #111;
+$two: #222;
+$three: #333;
+$four: #444;
+$five: #555;
+$six: #666;
+$seven: #777;
+$eight: #888;
+$nine: #999;
+$a: #aaa;
+$b: #bbb;
+$c: #ccc;
+$d: #ddd;
+$e: #eee;
+$f: #fff;
+
+// colors
+$focus-blue: #269aff;
+
+// font
+$default-font-family: "Quicksand", sans-serif;
+$default-font-size: 1rem;
+
+// form elements
+$default-form-element-background-color: $f;
+$default-form-element-border-color: $c;
+$default-form-element-border-radius: 0.25rem;
+$default-form-element-border-style: solid;
+$default-form-element-border-width: 1px;
+$default-form-element-height: 38px;
+$default-form-element-padding: 0.5rem;
+$default-form-element-placeholder-color: $b;
+$default-form-element-text-color: $five;
+
+// form element focus
+$default-form-element-focus-color: $focus-blue;
+$default-form-element-focus-shadow: 0 0 3px -1px $focus-blue;
+
+// form element hover
+$default-form-element-background-color-hover: $default-form-element-background-color;
+$default-form-element-border-color-hover: $a;
+$default-form-element-text-color-hover: $five;
+
+// form element disabled 
+$default-form-element-background-color-disabled: $e;
+$default-form-element-border-color-hover: $default-form-element-border-color;
+$default-form-element-text-color-disabled: $b;
+
+// select
+$default-select-arrow-url: url('undefault/svg/dropdown-arrow.svg');
+$default-select-arrow-url-disabled: url('undefault/svg/dropdown-arrow-disabled.svg');
+$default-select-focus-shadow: 0 0 3px 0 $focus-blue;
+
+// input
+$default-input-focus-shadow: $default-form-element-focus-shadow;
+
