@@ -28,7 +28,7 @@ $form-element-height: 48px;
 ```
 
 ## Soon
-This package is brand new and is still in development. Next up is styling checkboxes, and testing on IE and Edge.
+This package is brand new and is still in development. Next up is styling textareas, and testing on IE and Edge.
 
 ## Variable list
 ### General
