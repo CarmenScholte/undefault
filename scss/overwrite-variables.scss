@@ -102,7 +102,7 @@ $checkbox-border-radius: $form-element-border-radius !default;
 $checkbox-border-style: $form-element-border-style !default;
 $checkbox-border-width: $form-element-border-width !default;
 $checkbox-background-color: $form-element-background-color !default;
-$checkbox-height: calc(#{$form-element-height} / 2) !default;
+$checkbox-size: calc(#{$form-element-height} / 2) !default;
 
 // checkbox focus 
 $checkbox-focus-color: $form-element-focus-color !default;
@@ -115,3 +115,33 @@ $checkbox-border-color-hover: $form-element-border-color-hover !default;
 // checkbox disabled
 $checkbox-background-color-disabled: $form-element-background-color-disabled !default;
 $checkbox-border-color-disabled: $form-element-border-color-disabled !default;
+
+
+// textarea
+// overwrite to change textarea elements
+$textarea-resizer-url: $default-textarea-resizer-url;
+$textarea-resizer-url-disabled: $default-textarea-resizer-url-disabled;
+
+$textarea-border-color: $form-element-border-color !default;
+$textarea-border-radius: $form-element-border-radius !default;
+$textarea-border-style: $form-element-border-style !default;
+$textarea-border-width: $form-element-border-width !default;
+$textarea-background-color: $form-element-background-color !default;
+$textarea-height: calc(2 * #{$form-element-height}) !default;
+$textarea-padding: $form-element-padding !default;
+$textarea-placeholder-color: $form-element-placeholder-color !default;
+$textarea-text-color: $form-element-text-color !default;
+
+// textarea focus 
+$textarea-focus-color: $form-element-focus-color !default;
+$textarea-focus-shadow: $form-element-focus-shadow !default;
+
+// textarea hover
+$textarea-text-color-hover: $form-element-text-color-hover !default;
+$textarea-background-color-hover: $form-element-background-color-hover !default;
+$textarea-border-color-hover: $form-element-border-color-hover !default;
+
+// textarea disabled
+$textarea-text-color-disabled: $form-element-text-color-disabled !default;
+$textarea-background-color-disabled: $form-element-background-color-disabled !default;
+$textarea-border-color-disabled: $form-element-border-color-disabled !default;
