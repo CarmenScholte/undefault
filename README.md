@@ -3,7 +3,9 @@ CSS framework for simple, pretty form elements whose default properties are easi
 
 ## Usage 
 Use npm to install Undefault in your Angular application:
-`npm install undefault`
+```
+npm install undefault
+```
 
 Import Undefault in your top level styling file, by default 'styles.scss':
 ```
@@ -17,7 +19,7 @@ $form-element-background-color: pink;
 @import 'undefault';
 ```
 
-To overwrite element specific styling, define the lower level variables in your top level styling file. Overwriting more specific variables will cause more general variables to be overwritten. Variables like $form-element-text-color style all types of form elements like `<input>` and `<select>`, whereas variables like $input-border-color will only affect `<input>` elements. For example, you can overwrite $form-element-height and $input-height in any order, but $input-height will win. 
+To overwrite element specific styling, define the lower level variables in your top level styling file. Overwriting more specific variables will cause more general variables to be overwritten. Variables like `$form-element-text-color` style all types of form elements like `<input>` and `<select>`, whereas variables like `$input-border-color` will only affect `<input>` elements. For example, you can overwrite `$form-element-height` and `$input-height` in any order, but `$input-height` will win. 
 ```
 $input-height: 50px;
 $form-element-height: 48px;
