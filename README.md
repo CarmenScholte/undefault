@@ -1,5 +1,5 @@
 # Undefault
-CSS framework for simple, pretty form elements whose default properties are easily overwritten. Undefault tries to provide a consistent look independent of browsers. Tested on Chrome, Firefox and Opera.
+CSS framework for simple, pretty form elements whose default properties are easily overwritten. Undefault tries to provide a consistent look independent of browsers. Tested on Chrome, Firefox and Safari.
 
 ## Usage 
 Use npm to install Undefault in your Angular application:
