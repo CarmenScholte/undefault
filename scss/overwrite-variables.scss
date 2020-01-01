@@ -67,6 +67,9 @@ $select-border-color-disabled: $form-element-border-color-disabled !default;
 
 // input
 // overwrite to change for input elements
+$input-arrow-url: $default-select-arrow-url !default;
+$input-arrow-url-disabled: $default-select-arrow-url-disabled !default;
+
 $input-border-color: $form-element-border-color !default;
 $input-border-radius: $form-element-border-radius !default;
 $input-border-style: $form-element-border-style !default;
@@ -145,3 +148,32 @@ $textarea-border-color-hover: $form-element-border-color-hover !default;
 $textarea-text-color-disabled: $form-element-text-color-disabled !default;
 $textarea-background-color-disabled: $form-element-background-color-disabled !default;
 $textarea-border-color-disabled: $form-element-border-color-disabled !default;
+
+
+// output
+// overwrite to change output elements
+$output-background-color: $form-element-background-color-disabled;
+$output-border-color: $form-element-background-color-disabled;
+$output-border-radius: $form-element-border-radius;
+$output-border-style: $form-element-border-style;
+$output-border-width: $form-element-border-width;
+$output-padding: $form-element-padding;
+
+
+// radio 
+// overwrite to change input radio type elements
+$radio-check-url: $default-radio-check-url;
+$radio-check-url-disabled: $default-radio-check-url-disabled;
+
+$radio-background-color: $form-element-background-color;
+$radio-background-color-disabled: $form-element-background-color-disabled;
+$radio-size: calc(#{$form-element-height} / 2);
+$radio-focus-color: $form-element-focus-color;
+$radio-border-color: $form-element-border-color;
+$radio-border-color-disabled: $form-element-border-color-disabled;
+$radio-border-style: $form-element-border-style;
+$radio-border-width: $form-element-border-width;
+
+// hover 
+$radio-border-color-hover: $form-element-border-color-hover;
+$radio-background-color-hover: $form-element-background-color-hover;

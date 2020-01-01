@@ -1,0 +1,13 @@
+@import "./overwrite-variables.scss";
+
+output, .output {
+  background-color: $output-background-color;
+  border-color: $output-border-color;
+  border-width: $output-border-width;
+  border-style: $output-border-style;
+  border-radius: $output-border-radius;
+  font-family: $form-element-font-family;
+  font-size: $form-element-font-size;
+  padding: $output-padding;
+  min-width: 150px;
+}

@@ -14,7 +14,10 @@ input[type=checkbox],
   padding: 0;
   transition: 200ms;
   width: $checkbox-size;
+
+  -moz-appearance: none;
   -webkit-appearance: none;
+  appearance: none;
 
   &:checked {
     background: url("undefault/svg/check.svg"), $checkbox-focus-color;

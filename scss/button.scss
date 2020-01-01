@@ -1,0 +1,20 @@
+@import "./overwrite-variables.scss";
+
+button, 
+.button {
+
+  &:hover {
+   
+  }
+
+  &:focus {
+   
+  }
+
+  &:disabled {
+    
+    &:hover {
+
+    }
+  }
+}

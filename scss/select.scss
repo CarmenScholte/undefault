@@ -19,8 +19,10 @@ select,
   padding-right: 32px;
   position: relative;
   transition-duration: 200ms;
+  
+  -moz-appearance: none;
   -webkit-appearance: none;
-
+  appearance: none;
 
   // placeholder disabled color
   // only works if select is required and option is disabled and has a value

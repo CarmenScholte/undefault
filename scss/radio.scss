@@ -1,0 +1,52 @@
+@import "./overwrite-variables.scss";
+
+input[type=radio],
+.input[type=radio] {
+  background: $radio-background-color;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $radio-size;
+  border-color: $radio-border-color;
+  border-style: $radio-border-style;
+  border-radius: $radio-size;
+  border-width: $radio-border-width;
+  height: $radio-size;
+  width: $radio-size;
+
+  &:checked {
+    background: $radio-check-url, $radio-focus-color;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: $radio-size;
+    border-color: $radio-focus-color;
+
+    &:hover {
+      background: $radio-check-url, $radio-focus-color;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: $radio-size;
+      border-color: $radio-focus-color;
+    }
+
+    &:disabled {
+      background: $radio-check-url-disabled, $radio-background-color-disabled;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: $radio-size;
+      border-color: $radio-border-color;
+    }
+  }
+
+  &:hover {
+    background: $radio-background-color-hover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: $radio-size;
+    border-color: $radio-border-color-hover;
+  }
+
+  &:disabled {
+    background: $radio-background-color-disabled;
+    border-color: $radio-border-color-disabled;
+  }
+}
