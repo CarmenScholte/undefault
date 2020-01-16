@@ -19,7 +19,7 @@ select,
   padding-right: 32px;
   position: relative;
   transition-duration: 200ms;
-  
+
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -107,11 +107,12 @@ select,
 }
 
 .options {
-  z-index: 1;
+  background-color: $select-background-color;
   border: $select-border-width $select-border-style $select-border-color;
   border-top: 0;
   border-radius: 0 0 $select-border-radius $select-border-radius;
-  background-color: $select-background-color;
+  position: relative;
+  z-index: 1;
 
   &--closed {
     visibility: hidden;
@@ -119,16 +120,16 @@ select,
 }
 
 .option {
+  box-sizing: border-box;
+  color: $select-text-color;
   font-size: $form-element-font-size;
   font-family: $form-element-font-family;
-  color: $select-text-color;
   height: $select-height;
   padding: $select-padding;
   padding-right: 32px;
   overflow: hidden;
-  box-sizing: border-box;
-  white-space: nowrap;
   text-overflow: ellipsis;
+  white-space: nowrap;
 
   &:last-child {
     border-radius: 0 0 $select-border-radius $select-border-radius;

@@ -18,11 +18,9 @@ onOptionClicked = function (event) {
 }
 
 onDocumentClick = function (event) {
-  console.log(event);
   var selectList = document.getElementsByClassName("select");
   for (var i = 0; i < selectList.length; i++) {
     var element = selectList[i];
-    console.log(element);
     if (element != event.target) {
       element.className = element.className.replace(" select--opened", "");
       element.nextSibling.className = "options options--closed";
@@ -105,7 +103,7 @@ restyleSelects = function () {
 document.addEventListener("click", onDocumentClick);
 
 //run multiple times to support safari
-// document.addEventListener("DOMContentLoaded", restyleSelects);
-// window.onload = function () {
-//   restyleSelects();
-// }
+document.addEventListener("DOMContentLoaded", restyleSelects);
+window.onload = function () {
+  restyleSelects();
+}

@@ -1,6 +1,6 @@
 {
   "name": "undefault",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "description": "CSS framework for simple, customizable form elements",
   "main": "undefault.scss",
   "scripts": {
