@@ -19,16 +19,13 @@ $form-element-height: $default-form-element-height !default;
 $form-element-padding: $default-form-element-padding !default;
 $form-element-placeholder-color: $default-form-element-placeholder-color !default;
 $form-element-text-color: $default-form-element-text-color !default;
-
 // form element focus 
 $form-element-focus-color: $default-form-element-focus-color !default;
 $form-element-focus-shadow: $default-form-element-focus-shadow !default;
-
 // form element hover
 $form-element-text-color-hover: $default-form-element-text-color-hover !default;
 $form-element-background-color-hover: $default-form-element-background-color-hover !default;
 $form-element-border-color-hover: $default-form-element-border-color-hover !default;
-
 // form element disabled
 $form-element-text-color-disabled: $default-form-element-text-color-disabled !default;
 $form-element-background-color-disabled: $default-form-element-background-color-disabled !default;
@@ -49,16 +46,13 @@ $select-height: $form-element-height !default;
 $select-padding: $form-element-padding !default;
 $select-placeholder-color: $form-element-placeholder-color !default;
 $select-text-color: $form-element-text-color !default;
-
 // select focus
 $select-focus-color: $form-element-focus-color !default;
 $select-focus-shadow: $form-element-focus-shadow !default;
-
 // select hover
 $select-text-color-hover: $form-element-text-color-hover !default;
 $select-background-color-hover: $form-element-background-color-hover !default;
 $select-border-color-hover: $form-element-border-color-hover !default;
-
 // select disabled
 $select-text-color-disabled: $form-element-text-color-disabled !default;
 $select-background-color-disabled: $form-element-background-color-disabled !default;
@@ -79,16 +73,13 @@ $input-height: $form-element-height !default;
 $input-padding: $form-element-padding !default;
 $input-placeholder-color: $form-element-placeholder-color !default;
 $input-text-color: $form-element-text-color !default;
-
 // input focus 
 $input-focus-color: $form-element-focus-color !default;
 $input-focus-shadow: $form-element-focus-shadow !default;
-
 // input hover
 $input-text-color-hover: $form-element-text-color-hover !default;
 $input-background-color-hover: $form-element-background-color-hover !default;
 $input-border-color-hover: $form-element-border-color-hover !default;
-
 // input disabled
 $input-text-color-disabled: $form-element-text-color-disabled !default;
 $input-background-color-disabled: $form-element-background-color-disabled !default;
@@ -110,11 +101,9 @@ $checkbox-size: calc(#{$form-element-height} / 2) !default;
 // checkbox focus 
 $checkbox-focus-color: $form-element-focus-color !default;
 $checkbox-focus-shadow: $form-element-focus-shadow !default;
-
 // checkbox hover
 $checkbox-background-color-hover: $form-element-background-color-hover !default;
 $checkbox-border-color-hover: $form-element-border-color-hover !default;
-
 // checkbox disabled
 $checkbox-background-color-disabled: $form-element-background-color-disabled !default;
 $checkbox-border-color-disabled: $form-element-border-color-disabled !default;
@@ -134,16 +123,13 @@ $textarea-height: calc(2 * #{$form-element-height}) !default;
 $textarea-padding: $form-element-padding !default;
 $textarea-placeholder-color: $form-element-placeholder-color !default;
 $textarea-text-color: $form-element-text-color !default;
-
 // textarea focus 
 $textarea-focus-color: $form-element-focus-color !default;
 $textarea-focus-shadow: $form-element-focus-shadow !default;
-
 // textarea hover
 $textarea-text-color-hover: $form-element-text-color-hover !default;
 $textarea-background-color-hover: $form-element-background-color-hover !default;
 $textarea-border-color-hover: $form-element-border-color-hover !default;
-
 // textarea disabled
 $textarea-text-color-disabled: $form-element-text-color-disabled !default;
 $textarea-background-color-disabled: $form-element-background-color-disabled !default;
@@ -173,7 +159,43 @@ $radio-border-color: $form-element-border-color;
 $radio-border-color-disabled: $form-element-border-color-disabled;
 $radio-border-style: $form-element-border-style;
 $radio-border-width: $form-element-border-width;
-
 // hover 
 $radio-border-color-hover: $form-element-border-color-hover;
 $radio-background-color-hover: $form-element-background-color-hover;
+
+
+// button
+// overwrite to change button appearance
+$button-border-color: $default-button-border-color !default;
+$button-border-radius: $form-element-border-radius !default;
+$button-border-style: $form-element-border-style !default;
+$button-border-width: $default-button-border-width !default;
+$button-background-color: $default-button-background-color !default;
+$button-height: $form-element-height !default;
+$button-padding: $form-element-padding calc(#{$form-element-padding} * 2) !default;
+$button-text-color: $default-button-text-color !default;
+// button focus 
+$button-focus-color: $form-element-focus-color !default;
+$button-focus-shadow: $form-element-focus-shadow !default;
+// button hover
+$button-text-color-hover: $default-button-text-color !default;
+$button-background-color-hover: $default-button-background-color-hover !default;
+$button-border-color-hover: $default-button-border-color-hover !default;
+// button disabled
+$button-text-color-disabled: $default-button-text-color !default;
+$button-background-color-disabled: $default-button-background-color-disabled !default;
+$button-border-color-disabled: $default-button-border-color-disabled !default;
+
+// secondary
+$button-secondary-background-color: $default-button-secondary-background-color !default;
+$button-secondary-border-color: $default-button-secondary-border-color !default;
+$button-secondary-border-width: $default-button-secondary-border-width !default;
+$button-secondary-text-color: $default-button-secondary-text-color !default;
+// hover
+$button-secondary-background-color-hover: $default-button-secondary-background-color-hover !default;
+$button-secondary-border-color-hover: $default-button-secondary-border-color-hover !default;
+$button-secondary-text-color-hover: $default-button-secondary-text-color-hover !default;
+// disabled
+$button-secondary-background-color-disabled: $default-button-secondary-background-color-disabled !default;
+$button-secondary-border-color-disabled: $default-button-secondary-border-color-disabled !default;
+$button-secondary-text-color-disabled: $default-button-secondary-text-color-disabled !default;

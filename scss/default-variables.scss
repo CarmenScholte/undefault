@@ -19,6 +19,9 @@ $f: #fff;
 
 // colors
 $focus-blue: #269aff;
+$button-blue: $focus-blue;
+$button-blue-hover: #1a6cf0;
+$button-blue-disabled: #b5e3ff;
 
 // font
 $default-font-family: "Quicksand", sans-serif;
@@ -52,10 +55,6 @@ $default-form-element-border-color-disabled: $default-form-element-border-color;
 // select
 $default-select-arrow-url: url('undefault/svg/dropdown-arrow.svg');
 $default-select-arrow-url-disabled: url('undefault/svg/dropdown-arrow-disabled.svg');
-$default-select-focus-shadow: 0 0 3px 0 $focus-blue;
-
-// input
-$default-input-focus-shadow: $default-form-element-focus-shadow;
 
 // checkbox
 $default-checkbox-check-url: url("undefault/svg/check.svg");
@@ -68,3 +67,29 @@ $default-textarea-resizer-url-disabled: url("undefault/svg/textarea-resizer-disa
 // radio
 $default-radio-check-url: url("undefault/svg/radio-check.svg");
 $default-radio-check-url-disabled: url("undefault/svg/radio-check-disabled.svg");
+
+// button
+// primary
+$default-button-background-color: $button-blue;
+$default-button-border-color: $button-blue;
+$default-button-border-width: 0;
+$default-button-text-color: $f;
+// primary hover
+$default-button-background-color-hover: $button-blue-hover;
+$default-button-border-color-hover: $button-blue-hover;
+// primary disabled
+$default-button-background-color-disabled: $button-blue-disabled;
+$default-button-border-color-disabled: $button-blue-disabled;
+// secondary
+$default-button-secondary-background-color: $f;
+$default-button-secondary-border-color: $button-blue;
+$default-button-secondary-border-width: $default-form-element-border-width;
+$default-button-secondary-text-color: $button-blue;
+// secondary hover 
+$default-button-secondary-background-color-hover: $f;
+$default-button-secondary-border-color-hover: $button-blue-hover;
+$default-button-secondary-text-color-hover: $button-blue-hover;
+// secondary disabled
+$default-button-secondary-background-color-disabled: $f;
+$default-button-secondary-border-color-disabled: $button-blue-disabled;
+$default-button-secondary-text-color-disabled: $button-blue-disabled;

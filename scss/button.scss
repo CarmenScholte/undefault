@@ -2,19 +2,106 @@
 
 button, 
 .button {
+  background-color: $button-background-color;
+  border-color: $button-border-color;
+  border-radius: $button-border-radius;
+  border-style: $button-border-style;
+  border-width: $button-border-width;
+  color: $button-text-color;
+  font-family: $form-element-font-family;
+  font-size: $form-element-font-size;
+  height: $button-height;
+  padding: $button-padding;
 
   &:hover {
-   
+    background-color: $button-background-color-hover;
+    border-color: $button-border-color-hover;
+    color: $button-text-color-hover;
   }
 
   &:focus {
-   
+    border-color: $button-focus-color;
+    box-shadow: $button-focus-shadow;
+    outline: none;
   }
 
   &:disabled {
+    background-color: $button-background-color-disabled;
+    border-color: $button-border-color-disabled;
+    color: $button-text-color-disabled;
     
     &:hover {
+      background-color: $button-background-color-disabled;
+      border-color: $button-border-color-disabled;
+      color: $button-text-color-disabled;  
+    }
+  }
 
+  &--primary {
+    background-color: $button-background-color;
+    border-color: $button-border-color;
+    border-radius: $button-border-radius;
+    border-style: $button-border-style;
+    border-width: $button-border-width;
+    color: $button-text-color;
+    font-family: $form-element-font-family;
+    font-size: $form-element-font-size;
+    height: $button-height;
+    padding: $button-padding;
+  
+    &:hover {
+      background-color: $button-background-color-hover;
+      border-color: $button-border-color-hover;
+      color: $button-text-color-hover;
+    }
+  
+    &:focus {
+      border-color: $button-focus-color;
+      box-shadow: $button-focus-shadow;
+      outline: none;
+    }
+  
+    &:disabled {
+      background-color: $button-background-color-disabled;
+      border-color: $button-border-color-disabled;
+      color: $button-text-color-disabled;
+      
+      &:hover {
+        background-color: $button-background-color-disabled;
+        border-color: $button-border-color-disabled;
+        color: $button-text-color-disabled;  
+      }
+    }
+  }
+
+  &--secondary {
+    background-color: $button-secondary-background-color;
+    border-color: $button-secondary-border-color;
+    border-width: $button-secondary-border-width;
+    color: $button-secondary-text-color;
+  
+    &:hover {
+      background-color: $button-secondary-background-color-hover;
+      border-color: $button-secondary-border-color-hover;
+      color: $button-secondary-text-color-hover;
+    }
+  
+    &:focus {
+      border-color: $button-focus-color;
+      box-shadow: $button-focus-shadow;
+      outline: none;
+    }
+  
+    &:disabled {
+      background-color: $button-secondary-background-color-disabled;
+      border-color: $button-secondary-border-color-disabled;
+      color: $button-secondary-text-color-disabled;
+      
+      &:hover {
+        background-color: $button-secondary-background-color-disabled;
+        border-color: $button-secondary-border-color-disabled;
+        color: $button-secondary-text-color-disabled;  
+      }
     }
   }
 }
