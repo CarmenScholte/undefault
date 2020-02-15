@@ -1,4 +1,4 @@
-onSelectClicked = function (event) {
+function onSelectClicked(event) {
   var className = event.target.nextSibling.className;
   if (className.indexOf("closed") == -1) {
     event.target.nextSibling.className = "options options--closed";
@@ -9,7 +9,7 @@ onSelectClicked = function (event) {
   }
 }
 
-onOptionClicked = function (event) {
+function onOptionClicked(event) {
   var selectNode = event.target.parentNode.parentNode.childNodes[0];
   selectNode.textContent = event.target.textContent;
   selectNode.dispatchEvent(new Event("click"));
@@ -17,7 +17,7 @@ onOptionClicked = function (event) {
   selectNode.focus();
 }
 
-onDocumentClick = function (event) {
+function onDocumentClick(event) {
   var selectList = document.getElementsByClassName("select");
   for (var i = 0; i < selectList.length; i++) {
     var element = selectList[i];
@@ -28,7 +28,8 @@ onDocumentClick = function (event) {
   }
 }
 
-restyleSelects = function () {
+function restyleSelects() {
+  console.log('Restyle selects');
   var selectList = document.getElementsByTagName("select");
   for (var i = 0; i < selectList.length; i++) {
     var element = selectList[i];
@@ -98,12 +99,14 @@ restyleSelects = function () {
     var parent = element.parentElement;
     parent.removeChild(element);
   }
+
+  document.addEventListener("click", onDocumentClick);
 }
 
-document.addEventListener("click", onDocumentClick);
 
-//run multiple times to support safari
-document.addEventListener("DOMContentLoaded", restyleSelects);
-window.onload = function () {
-  restyleSelects();
-}
+// document.addEventListener("DOMContentLoaded", restyleSelect);
+// window.onload = function () {
+//   restyleSelect();
+// };
+
+export { restyleSelects };

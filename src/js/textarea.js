@@ -1,8 +1,7 @@
-restyleTextareas = function () {
-  console.log("restyle");
+ function restyleTextareas() {
+  console.log("Restyle textareas");
   var textareaList = document.getElementsByTagName("textarea");
 
-  console.log(textareaList);
   for (var i = 0; i < textareaList.length; i++) {
     var element = textareaList[i];
     var parent = element.parentNode;
@@ -19,7 +18,9 @@ restyleTextareas = function () {
 }
 
 //run multiple times to support safari
-document.addEventListener("DOMContentLoaded", restyleTextareas);
+//document.addEventListener("DOMContentLoaded", restyleTextareas);
 // window.onload = function () {
 //   restyleTextareas();
 // }
+
+export { restyleTextareas };

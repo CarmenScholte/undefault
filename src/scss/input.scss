@@ -70,3 +70,46 @@ input[list] {
     color: $input-text-color-disabled;
   }
 }
+
+
+input[type=file] {
+  padding: 0;
+}
+::-webkit-file-upload-button {
+  position: absolute;
+  background-color: $button-background-color;
+  color: $button-text-color;
+  font-size: $undefault-font-size;
+  font-family: $undefault-font-family;
+  height: $input-height;
+  padding: $button-padding;
+  transform: translate(-1px, -1px);
+  border: none;
+  border-radius: $button-border-radius 0 0 $button-border-radius;
+
+  &:hover {
+    background-color: $button-background-color-hover;
+    border-color: $button-border-color-hover;
+    color: $button-text-color-hover;
+    cursor: pointer;
+  }
+
+  &:focus {
+    border-color: $button-focus-color;
+    box-shadow: $button-focus-shadow;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $button-background-color-disabled;
+    border-color: $button-border-color-disabled;
+    color: $button-text-color-disabled;
+    
+    &:hover {
+      background-color: $button-background-color-disabled;
+      border-color: $button-border-color-disabled;
+      color: $button-text-color-disabled;  
+      cursor: default;
+    }
+  }
+}

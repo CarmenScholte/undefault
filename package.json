@@ -1,14 +1,11 @@
 {
   "name": "undefault",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "CSS framework for simple, customizable form elements",
-  "main": "undefault.scss",
+  "private": true,
   "scripts": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CarmenScholte/Undefault.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "keywords": [
     "css",
@@ -22,11 +19,22 @@
     "url": "https://github.com/CarmenScholte/Undefault/issues"
   },
   "homepage": "https://github.com/CarmenScholte/Undefault#readme",
+  "devDependencies": {
+    "css-loader": "^3.4.2",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  },
   "files": [
     "undefault.scss",
     "scss",
     "js",
     "svg",
     "README.md"
-  ]
+  ],
+  "dependencies": {
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2"
+  }
 }
