@@ -40,6 +40,10 @@ select,
     border-color: $select-focus-color;
     box-shadow: $select-focus-shadow;
     outline: none;
+
+    .options {
+      border-color: $select-focus-color;
+    }
   }
 
   &:disabled {

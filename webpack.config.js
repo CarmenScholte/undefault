@@ -1,11 +1,11 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   entry: './src/undefault.js',
   output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: 'undefault.js',
+    path: path.resolve(__dirname, ''),
   },
   module: {
     rules: [
@@ -18,10 +18,10 @@ module.exports = {
       },
     ],
   },
-  plugin: [
-    new MiniCssExtractPlugin({
-      filename: isDevelopment ? '[name].css' : '[name].[hash].css',
-      chunkFilename: isDevelopment ? '[id].css' : '[id].[hash].css'
-    })
-  ]
+  // plugin: [
+  //   new MiniCssExtractPlugin({
+  //     filename: isDevelopment ? '[name].css' : '[name].[hash].css',
+  //     chunkFilename: isDevelopment ? '[id].css' : '[id].[hash].css'
+  //   })
+  // ]
 };
