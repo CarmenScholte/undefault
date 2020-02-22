@@ -1,0 +1,15 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@import "undefault/undefault.scss";
+
+$selectIcon: $select-arrow-url;
+$checkIcon: $checkbox-check-url;
+$resizerIcon: $textarea-resizer-url;
+

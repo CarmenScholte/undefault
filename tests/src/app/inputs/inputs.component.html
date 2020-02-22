@@ -1,0 +1,56 @@
+<div>
+  <label>Regular input</label>
+  <div class="form-row">
+    <input />
+
+    <input placeholder="Placeholder" />
+
+    <input value="Value" />
+
+    <input disabled value="Disabled" />
+  </div>
+
+  <label>Input for files</label>
+  <div class="form-row">
+    
+    <input id="file-input" type="file"/>
+
+    <label for="file-input">Choose a file
+      <input id="file-input" type="file"/>
+    </label>
+
+    <input type="file" placeholder="Placeholder" />
+
+    <input type="file" disabled />
+  </div>
+
+  <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    <label>Input and output elements</label>
+    <div class="form-row">
+      <input name="a" value="1">
+
+      <input name="b" value="2">
+
+      <output name="x" for="a b"></output>
+    </div>
+  </form>
+
+  <label>Input with datalist</label>
+  <div class="form-row">
+    <input list="datalist" />
+
+    <input list="datalist" placeholder="Placeholder" />
+
+    <input list="datalist" value="One" />
+
+    <input list="datalist" disabled value="Disabled" />
+
+    <datalist id="datalist">
+      <option value="One">One</option>
+      <option value="Two">Two</option>
+      <option value="Three">Three</option>
+    </datalist>
+  </div>
+
+
+</div>

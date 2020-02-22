@@ -1,0 +1,46 @@
+<div class="container">
+  <nav class="navbar">
+    <div class="navbar__item">
+      <a routerlink="/inputs">Inputs</a>
+    </div>
+
+    <div class="navbar__item">
+      <a routerlink="/selects">Selects</a>
+    </div>
+
+    <div class="navbar__item">
+      <a routerlink="/textareas">Textareas</a>
+    </div>
+
+    <div class="navbar__item">
+      <a routerlink="/checkboxes">Checkboxes</a>
+    </div>
+
+    <div class="navbar__item">
+      <a routerlink="/buttons">Buttons</a>
+    </div>
+  </nav>
+  
+  <router-outlet></router-outlet>
+ 
+  <label>Radio buttons</label>
+  <div class="form-row">
+    <input name="radios" type="radio" />
+
+    <input name="radios" type="radio"/>
+
+    <input name="radios" type="radio" disabled/>
+
+    <input name="radios2" type="radio" checked disabled/>
+  </div>
+
+
+  <label>Icons</label>
+  <div class="form-row">
+    <i class="select-icon"></i>
+    <i class="check-icon"></i>
+    <i class="resizer-icon"></i>
+  </div>
+
+
+</div>
