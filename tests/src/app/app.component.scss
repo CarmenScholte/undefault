@@ -1,5 +1,3 @@
-@import "../styles.scss";
-
 .navbar {
   display: flex;
   justify-content: center;
@@ -11,37 +9,4 @@
     text-decoration: none;
     color: inherit;
   }
-}
-
-.select-icon {
-  background-image: $selectIcon;
-  background-size: 12px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-  width: 24px;
-  min-height: 24px;
-}
-
-.check-icon {
-  background-color: #555;
-  background-image: $checkIcon;
-  background-size: 12px;
-  background-repeat: no-repeat;
-  background-position: center;
-  size: 12px;
-  border: none;
-  width: 24px;
-  min-height: 24px;
-}
-
-.resizer-icon {
-  background-image: $resizerIcon;
-  background-size: 12px;
-  background-repeat: no-repeat;
-  background-position: center;
-  size: 12px;
-  border: none;
-  width: 24px;
-  min-height: 24px;
 }

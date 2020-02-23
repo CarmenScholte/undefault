@@ -1,7 +1,6 @@
 @import "./overwrite-variables.scss";
 
-select,
-.select {
+select {
   background: $select-arrow-url, $select-background-color;
   background-repeat: no-repeat;
   background-position: center right 10px;

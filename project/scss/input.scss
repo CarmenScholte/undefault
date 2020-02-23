@@ -1,7 +1,7 @@
 @import "./overwrite-variables.scss";
 
 // Regular
-input.u-input {
+input {
   background-color: $input-background-color;
   border-width: $input-border-width;
   border-color: $input-border-color;
@@ -50,7 +50,7 @@ input.u-input {
 }
 
 // Datalist
-input.u-input[list] {
+input[list] {
   background: $input-arrow-url, $input-background-color;
   background-repeat: no-repeat;
   background-position: center right 10px;
@@ -72,7 +72,7 @@ input.u-input[list] {
 }
 
 // File input
-input.u-input[type="file"] {
+input[type="file"] {
   padding: 0;
 
   &::-webkit-file-upload-button {
@@ -111,16 +111,5 @@ input.u-input[type="file"] {
     border-color: $button-border-color-disabled;
     color: $button-text-color-disabled;
     cursor: default;
-  }
-}
-
-label.u-input {
-  input {
-    width: 0.1px;
-  }
-  input::-webkit-file-upload-button {
-    visibility: hidden;
-    width: 0.1px;
-    opacity: 0;
   }
 }
