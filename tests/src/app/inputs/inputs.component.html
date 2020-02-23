@@ -2,38 +2,38 @@
   <h1>Text, number, password and email</h1>
   <p>The styling for regular text inputs. This styling applies to type number, email and password too.</p>
   <div class="form-row">
-    <input class="u-input" type="text"/>
+    <input type="text" />
 
-    <input class="u-input" type="text" placeholder="Placeholder" />
+    <input type="text" placeholder="Placeholder" />
 
-    <input class="u-input" type="text" value="Value" />
+    <input type="text" value="Value" />
 
-    <input class="u-input" type="text" disabled value="Disabled" />
- 
-    <input class="u-input" type="number" value="123" />
+    <input type="text" disabled value="Disabled" />
 
-    <input class="u-input" type="email" value="email@test.com" />
+    <input type="number" value="123" />
 
-    <input class="u-input" type="password" value="Value" />
+    <input type="email" value="email@test.com" />
+
+    <input type="password" value="Value" />
   </div>
 
   <h1>Files</h1>
   <p>This unfortunately will not work for Firefox</p>
   <div class="form-row">
-    <input class="u-input" type="file" />
+    <input type="file" />
 
-    <input class="u-input" type="file" disabled />
+    <input type="file" disabled />
   </div>
 
   <form #outputForm oninput="x.value=parseInt(a.value)+parseInt(b.value)">
     <h1>Input and output elements</h1>
     <div class="form-row">
-      <input type="number" class="u-input" name="a" value="1">
+      <input type="number" name="a" value="1">
 
-      <input type="number" class="u-input" name="b" value="2">
+      <input type="number" name="b" value="2">
 
       <output name="x" for="a b">3</output>
     </div>
   </form>
 
-  </div>
+</div>
