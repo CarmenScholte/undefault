@@ -72,58 +72,53 @@ input.u-input[list] {
 }
 
 // File input
-input.u-input[type=file] {
+input.u-input[type="file"] {
   padding: 0;
-}
-input.u-input::-webkit-file-upload-button {
-  position: absolute;
-  background-color: $button-background-color;
-  color: $button-text-color;
-  font-size: $undefault-font-size;
-  font-family: $undefault-font-family;
-  height: $input-height;
-  padding: $button-padding;
-  transform: translate(-1px, -1px);
-  border: none;
-  border-radius: $button-border-radius 0 0 $button-border-radius;
 
-  &:hover {
+  &::-webkit-file-upload-button {
+    position: absolute;
+    background-color: $button-background-color;
+    color: $button-text-color;
+    font-size: $undefault-font-size;
+    font-family: $undefault-font-family;
+    height: $input-height;
+    padding: $button-padding;
+    transform: translate(-1px, -1px);
+    border: none;
+    border-radius: $button-border-radius 0 0 $button-border-radius;
+  }
+
+  &:hover::-webkit-file-upload-button {
     background-color: $button-background-color-hover;
     border-color: $button-border-color-hover;
     color: $button-text-color-hover;
     cursor: pointer;
   }
 
-  &:focus {
+  &:focus::-webkit-file-upload-button {
     border-color: $button-focus-color;
     box-shadow: $button-focus-shadow;
     outline: none;
   }
 
-  &:disabled {
+  &:disabled::-webkit-file-upload-button {
     background-color: $button-background-color-disabled;
     border-color: $button-border-color-disabled;
     color: $button-text-color-disabled;
-    
-    &:hover {
-      border-color: $button-border-color-disabled;
-      color: $button-text-color-disabled;  
-      cursor: default;
+  }
 
-      input.u-input::-webkit-file-upload-button {
-        background-color: $button-background-color-disabled;
-
-      }
-    }
+  &:disabled:hover::-webkit-file-upload-button {
+    border-color: $button-border-color-disabled;
+    color: $button-text-color-disabled;
+    cursor: default;
   }
 }
 
 label.u-input {
-
   input {
     width: 0.1px;
   }
-  input::-webkit-file-upload-button{
+  input::-webkit-file-upload-button {
     visibility: hidden;
     width: 0.1px;
     opacity: 0;

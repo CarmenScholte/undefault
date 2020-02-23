@@ -30,7 +30,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [] 
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "basestyle"
+  "defaultProject": "basestyle",
+  "cli": {
+    "analytics": "599b5d2e-178e-457d-ba4c-44aab671f857"
+  }
 }
