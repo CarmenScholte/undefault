@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'inputs', component: InputsComponent },
   { path: 'checkboxes', component: CheckboxesComponent },
   { path: 'selects', component: SelectsComponent },
-  { path: 'textares', component: TextareasComponent },
+  { path: 'textareas', component: TextareasComponent },
   { path: 'buttons', component: ButtonsComponent },
   { path: '', redirectTo: '/inputs', pathMatch: 'full' }
 ];

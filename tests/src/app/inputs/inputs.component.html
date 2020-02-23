@@ -1,49 +1,67 @@
 <div>
-  <label>Regular input</label>
+  <h1>Regular</h1>
+  <p>The styling for regular text inputs. This styling applies to type number, email and password too.</p>
   <div class="form-row">
-    <input />
+    <input class="u-input"/>
 
-    <input placeholder="Placeholder" />
+    <input class="u-input" placeholder="Placeholder" />
 
-    <input value="Value" />
+    <input class="u-input" value="Value" />
 
-    <input disabled value="Disabled" />
+    <input class="u-input" disabled value="Disabled" />
+ 
+    <input class="u-input" type="number" value="123" />
+
+    <input class="u-input" type="email" value="email@test.com" />
+
+    <input class="u-input" type="password" value="Value" />
   </div>
+  <!-- TODO -->
+  <!-- type password
+  type submit -- button
+  type reset -- button 
+  type button -- button
+  type color
+  type range
+  type search  -->
 
-  <label>Input for files</label>
+  <h1>Input for files</h1>
   <div class="form-row">
-    
-    <input id="file-input" type="file"/>
+    <input class="u-input" type="file" />
 
-    <label for="file-input">Choose a file
-      <input id="file-input" type="file"/>
+    <input class="u-input" type="file" disabled />
+
+    <label class="u-input" for="file-input">
+      Choose...
+      <input id="file-input" type="file" />
     </label>
 
-    <input type="file" placeholder="Placeholder" />
-
-    <input type="file" disabled />
+    <label class="u-input" for="file-input">
+      Choose...
+      <input id="file-input" type="file" disable/>
+    </label>
   </div>
 
   <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-    <label>Input and output elements</label>
+    <p>Input and output elements</p>
     <div class="form-row">
-      <input name="a" value="1">
+      <input class="u-input" name="a" value="1">
 
-      <input name="b" value="2">
+      <input class="u-input" name="b" value="2">
 
       <output name="x" for="a b"></output>
     </div>
   </form>
 
-  <label>Input with datalist</label>
+  <p>Input with datalist</p>
   <div class="form-row">
-    <input list="datalist" />
+    <input class="u-input" list="datalist" />
 
-    <input list="datalist" placeholder="Placeholder" />
+    <input class="u-input" list="datalist" placeholder="Placeholder" />
 
-    <input list="datalist" value="One" />
+    <input class="u-input" list="datalist" value="One" />
 
-    <input list="datalist" disabled value="Disabled" />
+    <input class="u-input" list="datalist" disabled value="Disabled" />
 
     <datalist id="datalist">
       <option value="One">One</option>
@@ -51,6 +69,4 @@
       <option value="Three">Three</option>
     </datalist>
   </div>
-
-
 </div>

@@ -2,8 +2,14 @@
 
 .navbar {
   display: flex;
+  justify-content: center;
   &__item {
     display: flex;
+    padding: 0.5rem 1rem;
+  }
+  &__link {
+    text-decoration: none;
+    color: inherit;
   }
 }
 
